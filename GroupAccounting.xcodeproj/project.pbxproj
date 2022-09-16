@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A15C4D2F28D4E24C00ECF472 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C4D2E28D4E24C00ECF472 /* Model.swift */; };
+		A15C4D3128D4E34000ECF472 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C4D3028D4E34000ECF472 /* DBHelper.swift */; };
 		A1F9AB6C28D2F33F00CA1ECB /* GroupAccountingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9AB6B28D2F33F00CA1ECB /* GroupAccountingApp.swift */; };
 		A1F9AB6E28D2F33F00CA1ECB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9AB6D28D2F33F00CA1ECB /* ContentView.swift */; };
 		A1F9AB7028D2F34100CA1ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9AB6F28D2F34100CA1ECB /* Assets.xcassets */; };
@@ -14,6 +16,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A15C4D2E28D4E24C00ECF472 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A15C4D3028D4E34000ECF472 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		A15C4D3328D4EE2300ECF472 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		A15C4D3428D4EEF600ECF472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A1F9AB6828D2F33F00CA1ECB /* GroupAccounting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupAccounting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F9AB6B28D2F33F00CA1ECB /* GroupAccountingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAccountingApp.swift; sourceTree = "<group>"; };
 		A1F9AB6D28D2F33F00CA1ECB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +41,7 @@
 		A1F9AB5F28D2F33F00CA1ECB = {
 			isa = PBXGroup;
 			children = (
+				A15C4D3328D4EE2300ECF472 /* Config.xcconfig */,
 				A1F9AB6A28D2F33F00CA1ECB /* GroupAccounting */,
 				A1F9AB6928D2F33F00CA1ECB /* Products */,
 			);
@@ -51,10 +58,13 @@
 		A1F9AB6A28D2F33F00CA1ECB /* GroupAccounting */ = {
 			isa = PBXGroup;
 			children = (
+				A15C4D3428D4EEF600ECF472 /* Info.plist */,
+				A15C4D2E28D4E24C00ECF472 /* Model.swift */,
 				A1F9AB6B28D2F33F00CA1ECB /* GroupAccountingApp.swift */,
 				A1F9AB6D28D2F33F00CA1ECB /* ContentView.swift */,
 				A1F9AB6F28D2F34100CA1ECB /* Assets.xcassets */,
 				A1F9AB7128D2F34100CA1ECB /* Preview Content */,
+				A15C4D3028D4E34000ECF472 /* DBHelper.swift */,
 			);
 			path = GroupAccounting;
 			sourceTree = "<group>";
@@ -137,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15C4D2F28D4E24C00ECF472 /* Model.swift in Sources */,
 				A1F9AB6E28D2F33F00CA1ECB /* ContentView.swift in Sources */,
 				A1F9AB6C28D2F33F00CA1ECB /* GroupAccountingApp.swift in Sources */,
+				A15C4D3128D4E34000ECF472 /* DBHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +159,7 @@
 /* Begin XCBuildConfiguration section */
 		A1F9AB7428D2F34100CA1ECB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A15C4D3328D4EE2300ECF472 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -207,6 +220,7 @@
 		};
 		A1F9AB7528D2F34100CA1ECB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A15C4D3328D4EE2300ECF472 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -270,6 +284,7 @@
 				DEVELOPMENT_TEAM = 5PNKL6SL4L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GroupAccounting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +314,7 @@
 				DEVELOPMENT_TEAM = 5PNKL6SL4L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GroupAccounting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -9,13 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Button("Post userInfo"){
+            Task{
+                try await postUserInfo(userInfo: UserInfo(
+                    userName: "user21", password: "pass"))
+            }
         }
-        .padding()
     }
 }
 

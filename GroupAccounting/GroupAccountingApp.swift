@@ -15,3 +15,7 @@ struct GroupAccountingApp: App {
         }
     }
 }
+
+let ASTRA_DB_ID = "ed9190f1-9374-4079-8f5a-a902926a93ff"
+let ASTRA_DB_REGION = "asia-south1"
+let ASTRA_DB_KEYSPACE = "gh_orders_userinfo"
