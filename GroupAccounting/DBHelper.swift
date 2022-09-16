@@ -34,7 +34,7 @@ func getURLRequest(httpMethod:String, endURL:String) -> URLRequest {
     let str = "https://" + ASTRA_DB_ID + "-" + ASTRA_DB_REGION + ".apps.astra.datastax.com/api/rest/v2" + endURL
     let encodedStr = str.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
     let url = URL.init(string: encodedStr)!
-    let ASTRA_DB_APPLICATION_TOKEN = Bundle.main.infoDictionary?["ASTRA_DB_APPLICATION_TOKEN"] as? String
+    let ASTRA_DB_APPLICATION_TOKEN = Bundle.main.object(forInfoDictionaryKey:"ASTRA_DB_APPLICATION_TOKEN") as! String
     var urlRequest = URLRequest(url: url)
     urlRequest.httpMethod = httpMethod
      
